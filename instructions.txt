@@ -1,0 +1,17 @@
+		                 Welcome to Horse Board Game!
+
+
+How to play: 
+  This game consists of an 8x8 grid. Each player has a horse, represented by W (white horse)
+  for first player and B (black horse) for second player. The horses are placed in the
+  opposite corners at the start of the game as shown above. Horses moves in the same way
+  as in the game of chess EACH BOX ON THE GRID CAN ONLY BE VISITED ONCE. Your objective
+  is to make your opponent run out of moves. The player who has no more place to go loses.
+  Simple as that!
+
+Controls:
+  Possible positions to move your horse will be shown on the grid and also as a list bellow
+  the grid. You can select your desired option by typing the corresponding number and hitting
+  Enter key to confirm the move. To pause a game in and go to menu select option 0.
+  
+   
