@@ -8,6 +8,6 @@ is to make your opponent run out of moves. The player who has no more place to g
 Simple as that!
 
 ## Contributors:
- Markup : * [Makhlug Jafarov](https://github.com/jafarov01) 
-          * [Kumar Ramesh](https://github.com/kumarramesh454)
-          * [Chukwufumnaya](https://github.com/Chukwufumnaya)
+* [Makhlug Jafarov](https://github.com/jafarov01) 
+* [Kumar Ramesh](https://github.com/kumarramesh454)
+* [Chukwufumnaya](https://github.com/Chukwufumnaya)
