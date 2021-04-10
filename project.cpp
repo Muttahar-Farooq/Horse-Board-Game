@@ -24,6 +24,7 @@ void menu(bool &pause)
 	cout << "            |__|  |__| |_______||__|      |_______|    |_| \n";
 
     cout << "\n\n";
+    cout << "\t\tSelect the option by pressing keys 0-3!\n\n";
     if (pause) cout << "\t\t\t0 - Resume \n\n";
 	cout << "\t\t\t1 - Start a new Game\n\n"; 
 	cout << "\t\t\t2 - Rules\n\n";
