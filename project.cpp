@@ -48,7 +48,7 @@ void print_instructions () {
 
 void gamePlay(Grid &myGrid,bool &pause){
     position currentMove;
-    int option;
+    string option;
     char alphaChar = 'a';
     char turn = 'W';
     char key;
@@ -69,15 +69,25 @@ void gamePlay(Grid &myGrid,bool &pause){
         cout << "\n(Option 0): Pause the game\n";
         for (auto e:myGrid.getNextPosition(turn)){
             i=i+1;
-            cout <<"(Option "<<i<<"): Row = "<< char(alphaChar+e.row)<<e.column+1<<endl; 
+            cout <<"(Option "<<i<<"): "<< char(alphaChar+e.row)<<e.column+1<<endl; 
         }
-        cout << "Select an option from above: ";
+        cout << "\nType the option number from above and press enter: ";
 
         while (true){
             cin >> option;
-            if (option > 0 && option <= myGrid.getNextPosition(turn).size()){ myGrid.move(turn,myGrid.getNextPosition(turn)[option-1]);break;}
-            else if (option == 0) {pause=true; break;}
-            else cout << "Please Enter a valid value: ";
+            try
+            {
+                int optionI = stoi(option);
+                if (optionI > 0 && optionI <= myGrid.getNextPosition(turn).size()){ myGrid.move(turn,myGrid.getNextPosition(turn)[optionI-1]);break;}
+                else if (optionI == 0) {pause=true; break;}
+                else cout << "Entered value is not a valid option! Please Enter a valid option number: ";
+            }
+            catch(const std::exception& e)
+            {
+                cout << "Entered value is not a number! Please enter the option number: ";
+            }
+            
+            
     }
 
     if (pause) break;
