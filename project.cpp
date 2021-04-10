@@ -43,7 +43,7 @@ void print_instructions () {
     myfile.close();
   }
 
-  else cout << "Unable to open file"; 
+  else cout << "Unable to locate the file 'instructions.txt'!"; 
 }
 
 void gamePlay(Grid &myGrid,bool &pause){
